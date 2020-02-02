@@ -8,3 +8,4 @@ while N!=1:
     result += counter
     counter *= 2
 result += counter
+print(result)
