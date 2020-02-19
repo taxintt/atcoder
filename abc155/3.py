@@ -8,6 +8,7 @@ for _ in range(N):
     else:
         for_dict.setdefault(n, 1)
 
+# lambda or setdefaultが遅い...
 slist = sorted(for_dict.items(), key = lambda x : x[0])
 
 for ele in slist:

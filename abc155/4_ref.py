@@ -25,6 +25,7 @@ def count(x): #積がx以下になるペアの個数を返す(一旦重複は考
     ans -= np.count_nonzero(a_list * a_list <= x)
     return ans // 2
  
+# 計算量：O(log INF)
 left = -10 ** 18
 right = 10 ** 18
 while left + 1 < right:
