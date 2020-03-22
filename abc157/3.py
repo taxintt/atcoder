@@ -8,7 +8,7 @@ for _ in range(M):
     if num_dict[temp1] > temp2 or temp2!=0:
     	num_dict[temp1] = temp2
     i += 1
-    
+
 if num_dict[1] == 0 and N != 1:  
     print(-1)
 else:
