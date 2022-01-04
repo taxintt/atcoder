@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 
-const input: any = fs.readFileSync('/dev/stdin', 'utf8').split(' ');
+const input: any = fs.readFileSync('/dev/stdin', 'utf8').split(' |\n');
 const output = (x: any) => console.log(x)
 
 // 暗黙の型変換で、文字列扱いで結合処理されないようにする
