@@ -32,26 +32,17 @@ const outputFromArray = (x: any[]) => x.map(x => console.log(x));
 
 function main() {
 	// write code
-	let [itemNumber, budget] = parseIntArray(lines[0])
-	const itemPriceList = parseIntArray(lines[1])
+	const n: number = parseInt(lines[0])
+	let counter: number = 0
 
-	for (let index = 0; index < itemNumber; index++) {
-		if (isOddItemNumber(index)) {
-			budget -= (itemPriceList[index]-1);
-		} else {
-			budget -= itemPriceList[index];
-		}
-		if (budget < 0) {
-			return output('No')
+	while (true) {
+		counter += 1
+		if ((counter * (counter+1)/2) >= n) {
+			break
 		}
 	}
-	return output('Yes')
+	output(counter)
 }
-
-function isOddItemNumber(index: number): boolean {
-	return index % 2 == 1
-}
-
 
 // execute main function
 main()
